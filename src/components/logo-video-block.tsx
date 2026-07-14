@@ -8,6 +8,8 @@ export function LogoVideoBlock({ className }: { className?: string }) {
       autoPlay
       muted
       playsInline
+      preload="auto"
+      poster="/videos/logo-poster.jpg"
       aria-hidden="true"
       className={className}
       onTimeUpdate={(e) => {
