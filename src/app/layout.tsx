@@ -3,7 +3,6 @@ import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import { content } from "@/lib/content";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
-import { IntroSplash } from "@/components/intro-splash";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -79,7 +78,6 @@ export default function RootLayout({
         />
         {children}
         <ServiceWorkerRegister />
-        <IntroSplash />
       </body>
     </html>
   );
