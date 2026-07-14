@@ -42,8 +42,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Physician",
   name: content.doctor.name,
-  medicalSpecialty: "Gastroenterology",
-  description: content.doctor.bio,
+  description:
+    "Gastroenteróloga con alta especialidad en endoscopia gastrointestinal en Ensenada, B.C. Endoscopías, colonoscopías, CPRE, cápsula endoscópica y consultas de gastroenterología.",
+  url: siteUrl,
+  image: `${siteUrl}/images/og-image.png`,
+  telephone: `+${content.contact.whatsappNumber}`,
+  medicalSpecialty: "Gastroenterologic",
+  priceRange: "$$",
   identifier: {
     "@type": "PropertyValue",
     name: "COFEPRIS",
@@ -51,14 +56,37 @@ const jsonLd = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: content.location.address,
+    streetAddress: "Av. Delante 1000, Costa Azul",
     addressLocality: "Ensenada",
-    addressRegion: "Baja California",
+    addressRegion: "B.C.",
     postalCode: "22890",
     addressCountry: "MX",
   },
-  telephone: content.contact.whatsappNumber,
-  url: siteUrl,
+  geo: { "@type": "GeoCoordinates", latitude: 31.857, longitude: -116.617 },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "08:00",
+      closes: "21:00",
+    },
+  ],
+  availableService: content.services.map((service) => ({
+    "@type": "MedicalProcedure",
+    name: service.name,
+  })),
+  memberOf: content.doctor.certifications.map((org) => ({
+    "@type": "Organization",
+    name: org.replace(/\s*\(socia activa\)$/, ""),
+  })),
+  sameAs: [content.reviews.sourceUrl],
 };
 
 export default function RootLayout({
