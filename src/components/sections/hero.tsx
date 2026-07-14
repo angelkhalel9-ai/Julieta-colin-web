@@ -32,15 +32,18 @@ const word: typeof fadeUp = {
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#ebebeb]">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.98 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className="relative aspect-[21/9] w-full overflow-hidden bg-[#ebebeb]"
-      >
-        <LogoVideoBlock className="h-full w-full object-cover" />
+      <div className="relative aspect-[21/9] w-full overflow-hidden bg-[#ebebeb]">
+        <Image
+          src="/videos/logo-poster.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <LogoVideoBlock className="absolute inset-0 h-full w-full object-cover" />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent to-[#ebebeb]" />
-      </motion.div>
+      </div>
 
       <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-16 md:grid-cols-[1.1fr_0.9fr] md:px-8 md:py-20">
         <motion.div
