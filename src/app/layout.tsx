@@ -18,20 +18,43 @@ const manrope = Manrope({
 
 const siteUrl = "https://drajulietagastro.com";
 
+const title = `${content.doctor.name} | Gastroenteróloga en Ensenada, B.C.`;
+const description =
+  "Endoscopías, colonoscopías, CPRE y consultas de gastroenterología con la Dra. Julieta Colín Garnica en Ensenada, B.C. Más de 15 años de trayectoria médica. Agenda por WhatsApp.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${content.doctor.name} | Gastroenteróloga en Ensenada, B.C.`,
-  description:
-    "Endoscopías, colonoscopías y consultas de gastroenterología con la Dra. Julieta Colín Garnica en Ensenada, B.C. Más de 15 años de trayectoria médica. Agenda por WhatsApp.",
+  title,
+  description,
+  keywords: [
+    "gastroenteróloga Ensenada",
+    "gastroenterólogo Ensenada",
+    "endoscopía Ensenada",
+    "colonoscopía Ensenada",
+    "CPRE Ensenada",
+    "Dra. Julieta Colín Garnica",
+  ],
+  alternates: {
+    canonical: siteUrl,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: `${content.doctor.name} | Gastroenteróloga en Ensenada, B.C.`,
-    description:
-      "Endoscopías, colonoscopías y consultas de gastroenterología en Ensenada, B.C. Agenda tu cita por WhatsApp.",
+    title,
+    description,
     url: siteUrl,
     siteName: content.doctor.name,
     locale: "es_MX",
     type: "website",
     images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/og-image.png"],
   },
   icons: {
     icon: "/favicon.ico",
