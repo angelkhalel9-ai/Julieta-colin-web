@@ -44,7 +44,8 @@ export function LogoVideoBlock({ className }: { className?: string }) {
       muted
       playsInline
       preload="auto"
-      poster="/videos/logo-poster.jpg"
+      disablePictureInPicture
+      controlsList="nodownload noplaybackrate nofullscreen"
       aria-hidden="true"
       className={className}
       onTimeUpdate={(e) => {
