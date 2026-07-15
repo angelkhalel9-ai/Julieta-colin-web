@@ -3,9 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { content } from "@/lib/content";
-import { getWhatsAppLink } from "@/lib/whatsapp";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import { LogoVideoBlock } from "@/components/logo-video-block";
 
@@ -73,16 +71,7 @@ export function Hero() {
             decidir qué hacer.
           </motion.p>
 
-          <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button
-              render={<a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" />}
-              nativeButton={false}
-              size="lg"
-              className="bg-primary text-primary-foreground transition-transform hover:scale-[1.03] hover:bg-primary/90"
-            >
-              <WhatsAppIcon className="h-5 w-5" />
-              Agendar cita por WhatsApp
-            </Button>
+          <motion.div variants={fadeUp} className="mt-8">
             <Button
               render={<a href="#servicios" />}
               nativeButton={false}
