@@ -66,9 +66,9 @@ export function Hero() {
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-6 max-w-lg text-lg text-muted-foreground">
-            La Dra. Julieta Colín Garnica atiende endoscopías, colonoscopías y consultas
-            de gastroenterología con un enfoque claro: entender qué te pasa antes de
-            decidir qué hacer.
+            La Dra. Julieta Colín Garnica atiende consultas y realiza endoscopías y
+            colonoscopías, con un enfoque claro: entender qué te pasa antes de decidir
+            qué hacer.
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-8">

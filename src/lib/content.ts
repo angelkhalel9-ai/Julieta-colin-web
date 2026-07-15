@@ -4,7 +4,7 @@ export const content: SiteContent = {
   doctor: {
     name: "Dra. Julieta Colín Garnica",
     title: "Gastroenteróloga · Alta Especialidad en Endoscopia Gastrointestinal",
-    bio: "La historia de la Dra. Julieta Colín Garnica empieza en las aulas de la UNAM, pero se termina de escribir en los pasillos de dos de los hospitales más exigentes del país. En el Hospital Regional \"Lic. Adolfo López Mateos\" del ISSSTE se especializó en gastroenterología; en el Hospital General de México \"Dr. Eduardo Liceaga\" cursó su alta especialidad en endoscopia gastrointestinal. Ahí, entre guardias largas y casos que no admiten margen de error, aprendió algo que ningún libro enseña: que detrás de cada síntoma digestivo hay una persona con miedo a lo que puede significar. Esa lección la trajo consigo a Ensenada, donde hoy se toma el tiempo de explicar cada estudio y cada procedimiento con calma, en un lenguaje que cualquiera pueda entender, antes de decidir juntos el siguiente paso. Sigue certificada por el Consejo Mexicano de Gastroenterología y es socia activa de la Asociación Mexicana de Endoscopia Gastrointestinal, porque para ella seguir aprendiendo es, simplemente, otra forma de cuidar bien a quien confía en ella.",
+    bio: "La historia de la Dra. Julieta Colín Garnica empieza en las aulas de la Universidad Westhill, incorporada a la UNAM, pero se termina de escribir en los pasillos de dos de los hospitales más exigentes del país. En el Hospital Regional \"Lic. Adolfo López Mateos\" del ISSSTE se especializó en gastroenterología; en el Hospital General de México \"Dr. Eduardo Liceaga\" cursó su alta especialidad en endoscopia gastrointestinal. Ahí, entre guardias largas y casos que no admiten margen de error, aprendió algo que ningún libro enseña: que detrás de cada síntoma digestivo hay una persona con miedo a lo que puede significar. Esa lección la trajo consigo a Ensenada, donde hoy se toma el tiempo de explicar cada estudio y cada procedimiento con calma, en un lenguaje que cualquiera pueda entender, antes de decidir juntos el siguiente paso. Sigue certificada por el Consejo Mexicano de Gastroenterología y es socia activa de la Asociación Mexicana de Endoscopia Gastrointestinal, porque para ella seguir aprendiendo es, simplemente, otra forma de cuidar bien a quien confía en ella.",
     education: [
       {
         degree: "Médica Cirujana",
@@ -69,7 +69,7 @@ export const content: SiteContent = {
     {
       name: "Endoscopía y Panendoscopia",
       description:
-        "Revisa el esófago, el estómago y la primera parte del intestino con una cámara flexible. Puede combinarse con colonoscopía en el mismo procedimiento (panendo-colonoscopia) para un diagnóstico más completo.",
+        "Revisa el esófago, el estómago y la primera parte del intestino delgado con una cámara flexible.",
     },
     {
       name: "Colonoscopía",
@@ -87,9 +87,14 @@ export const content: SiteContent = {
         "Una cápsula del tamaño de una pastilla con cámara integrada que recorre el intestino delgado, útil cuando la endoscopia o colonoscopía tradicional no alcanzan a ver la zona afectada.",
     },
     {
-      name: "Balón Intragástrico y Gastrostomías",
+      name: "Balón Intragástrico",
       description:
-        "Balón intragástrico para el manejo de sobrepeso y obesidad, además de colocación de gastrostomías y sondas de alimentación para pacientes que requieren apoyo nutricional.",
+        "Un balón de silicona que se coloca en el estómago por endoscopía, sin cirugía, para ayudar en el manejo de sobrepeso y obesidad al generar una sensación de saciedad temprana.",
+    },
+    {
+      name: "Gastrostomías",
+      description:
+        "Colocación de una sonda de alimentación directamente en el estómago a través de una pequeña abertura en el abdomen, guiada por endoscopía. Está pensada para quienes no pueden alimentarse por la boca de forma segura — por dificultad para tragar o tras ciertas cirugías — y permite recibir nutrición, líquidos y medicamentos sin pasar por la garganta ni el esófago.",
     },
   ],
   reviews: {

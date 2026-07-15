@@ -23,8 +23,8 @@ export function Services() {
       >
         <h2 className="text-3xl font-semibold text-foreground md:text-4xl">Servicios</h2>
         <p className="mt-4 text-muted-foreground">
-          Del diagnóstico al tratamiento, con la tecnología para resolverlo en un
-          mismo lugar — sin rebotarte de especialista en especialista.
+          Contamos con un equipo de especialistas en distintas áreas médicas, listos
+          para acompañarte del diagnóstico al tratamiento — todo en un mismo lugar.
         </p>
       </motion.div>
 
