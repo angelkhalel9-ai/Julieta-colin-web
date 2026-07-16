@@ -45,6 +45,8 @@ export interface SiteContent {
   contact: {
     whatsappNumber: string;
     whatsappMessage: string;
+    instagramUrl: string;
+    facebookUrl: string;
   };
   location: {
     address: string;

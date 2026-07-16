@@ -157,6 +157,8 @@ export const content: SiteContent = {
   contact: {
     whatsappNumber: "522211726761",
     whatsappMessage: "Hola, quiero agendar una consulta de gastroenterología",
+    instagramUrl: "https://www.instagram.com/dragastro.julietacolin/",
+    facebookUrl: "https://www.facebook.com/profile.php?id=61572921696906",
   },
   location: {
     address: "Av. Delante 1000, Costa Azul, 22890 Ensenada, B.C.",
