@@ -56,9 +56,6 @@ export const metadata: Metadata = {
     description,
     images: ["/images/og-image.png"],
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 const jsonLd = {
