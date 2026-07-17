@@ -56,6 +56,9 @@ export const metadata: Metadata = {
     description,
     images: ["/images/og-image.png"],
   },
+  verification: {
+    google: "MJ39LhTC45jr2TSfj4dRXGBOwrM6jzQ7hKBxvTGLrXo",
+  },
 };
 
 const jsonLd = {
