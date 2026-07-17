@@ -18,7 +18,7 @@ export function FinalCTA() {
           variants={fadeUp}
           className="text-3xl font-semibold text-primary-foreground md:text-4xl"
         >
-          Entre más pronto lo revises, más simple suele ser resolverlo.
+          Cuanto antes lo atiendas, con más calma se resuelve.
         </motion.h2>
         <motion.p
           variants={fadeUp}
