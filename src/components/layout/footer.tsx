@@ -49,18 +49,6 @@ export function Footer() {
             <FacebookIcon className="h-5 w-5" />
           </a>
         </div>
-
-        <div className="mt-6 text-center text-sm text-muted-foreground">
-          Built with Claude Web Builder by{" "}
-          <a
-            href="https://tododeia.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-2 hover:text-foreground"
-          >
-            Tododeia
-          </a>
-        </div>
       </div>
     </footer>
   );
