@@ -9,16 +9,10 @@ import { fadeUp, staggerContainer } from "@/lib/motion";
 const headline = [
   { text: "Tu" },
   { text: "salud" },
-  { text: "digestiva," },
-  { text: "en" },
-  { text: "manos" },
-  { text: "con" },
-  { text: "más", highlight: true },
-  { text: "de", highlight: true },
-  { text: "15", highlight: true },
-  { text: "años", highlight: true },
-  { text: "de", highlight: true },
-  { text: "experiencia.", highlight: true },
+  { text: "digestiva" },
+  { text: "en", highlight: true },
+  { text: "buenas", highlight: true },
+  { text: "manos", highlight: true },
 ];
 
 const word: typeof fadeUp = {
