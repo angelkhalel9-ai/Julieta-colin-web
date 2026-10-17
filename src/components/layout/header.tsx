@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { content } from "@/lib/content";
@@ -40,6 +41,15 @@ export function Header() {
           ))}
         </nav>
 
+        <div className="flex items-center gap-3">
+        <a
+          href={`tel:+52${content.contact.officePhone.replace(/\D/g, "")}`}
+          className="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80"
+          aria-label={`Llamar al consultorio: ${content.contact.officePhone}`}
+        >
+          <Phone className="h-4 w-4" />
+          <span className="hidden min-[400px]:inline">{content.contact.officePhone}</span>
+        </a>
         <Button
           render={<a href="#contacto" />}
           nativeButton={false}
@@ -49,6 +59,7 @@ export function Header() {
           <span className="hidden sm:inline">Agendar cita</span>
           <span className="sm:hidden">Agendar</span>
         </Button>
+        </div>
       </div>
     </header>
   );
