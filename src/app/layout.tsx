@@ -69,7 +69,7 @@ const jsonLd = {
     "Gastroenteróloga con alta especialidad en endoscopia gastrointestinal en Ensenada, B.C. Endoscopías, colonoscopías, CPRE, cápsula endoscópica y consultas de gastroenterología.",
   url: siteUrl,
   image: `${siteUrl}/images/og-image.png`,
-  telephone: `+${content.contact.whatsappNumber}`,
+  telephone: `+52${content.contact.officePhone.replace(/\D/g, "")}`,
   medicalSpecialty: "Gastroenterologic",
   priceRange: "$$",
   identifier: {

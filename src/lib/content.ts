@@ -155,6 +155,7 @@ export const content: SiteContent = {
     ],
   },
   contact: {
+    officePhone: "646 200 9088",
     whatsappNumber: "522211726761",
     whatsappMessage: "Hola, quiero agendar una consulta de gastroenterología",
     instagramUrl: "https://www.instagram.com/dragastro.julietacolin/",

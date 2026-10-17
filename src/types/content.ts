@@ -43,6 +43,7 @@ export interface SiteContent {
     items: Testimonial[];
   };
   contact: {
+    officePhone: string;
     whatsappNumber: string;
     whatsappMessage: string;
     instagramUrl: string;

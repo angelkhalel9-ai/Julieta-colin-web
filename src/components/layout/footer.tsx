@@ -22,7 +22,16 @@ export function Footer() {
 
           <div>
             <p className="text-sm font-medium text-foreground">Contacto</p>
-            <p className="mt-1 text-sm text-muted-foreground">{formatWhatsAppDisplay()}</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Consultorio:{" "}
+              <a
+                href={`tel:+52${content.contact.officePhone.replace(/\D/g, "")}`}
+                className="hover:text-foreground"
+              >
+                {content.contact.officePhone}
+              </a>
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">WhatsApp: {formatWhatsAppDisplay()}</p>
             <p className="mt-3 text-xs text-muted-foreground">
               Registro COFEPRIS: {content.doctor.cofeprisRegistration}
             </p>
